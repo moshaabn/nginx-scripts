@@ -14,6 +14,7 @@ yarn add next-nginx-routes
 
 #### now go to /etc/nginx/sites-available
 #### create file domain.com and add the following
+```
 server {
         server_name domain.com www.domain.com;
         root /var/www/site_location/out;
@@ -31,6 +32,8 @@ server {
     include /var/www/site_location/next-routes.conf;
     listen 80;
 }
+````
+
 #### not link them to sites enabled
 ln -s /etc/nginx/sites-awailable/domain.com /etc/nginx/sites-awailable
 #### ensure that everything ok
