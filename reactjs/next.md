@@ -1,16 +1,25 @@
 ## nextjs for nginx configurations
+
 #### first install following package for routing
+```
 npm i next-nginx-routes
+```
 or
+```
 yarn add next-nginx-routes
+```
 
 #### second add this script to scripts in package.json file
 "deploy": "next build && next export && next-nginx-routes"
 ####  next export may be deprecated
 "deploy": "next build && next-nginx-routes"
 #### git clone repo
-#### npm i
-#### npm run deploy
+```
+npm i --legacy-peer-deps
+```
+```
+npm run deploy
+```
 
 #### now go to /etc/nginx/sites-available
 #### create file domain.com and add the following
